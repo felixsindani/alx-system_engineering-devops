@@ -37,7 +37,7 @@ errorfile 504 /etc/haproxy/errors/504.http
 
 frontend http_front
 bind *:80
-bind *:443 ssl crt /etc/ssl/www.gzoref.tech/www.gzoref.tech.pem
+bind *:443 ssl crt /etc/ssl/www.sindani.tech/www.sindani.tech.pem
 
 redirect scheme https if !{ ssl_fc }
 

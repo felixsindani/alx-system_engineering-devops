@@ -37,7 +37,7 @@ errorfile 504 /etc/haproxy/errors/504.http
 
 frontend http_front
 bind *:80
-bind *:443 ssl crt /etc/ssl/www.gzoref.tech/www.gzoref.tech.pem
+bind *:443 ssl crt /etc/ssl/www.sindani.tech/www.sindani.tech.pem
 
 redirect scheme https if !{ ssl_fc }
 
@@ -52,5 +52,5 @@ server letsencrypt 127.0.0.1:443
 
 backend http_back
 balance roundrobin
-server 1034-web-01 35.227.27.195:80 check
-server 1034-web-02 34.74.118.58:80 check
+server 1034-web-01 18.235.233.229:80 check
+server 1034-web-02 54.236.47.100:80 check
